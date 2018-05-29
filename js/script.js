@@ -16,6 +16,7 @@ if(name && age){
 // === - strict equal - values HAVE to be equal
 // != - NOT loosely equal - checks if not loosely equal
 // !== - NOT strictly equal - checks if not strictly equal
+// ! - NOT - checks if NOT what you're looking for
 
 let objectOne = {
   name: "David"
@@ -31,12 +32,16 @@ let objectTwo = {
 var firstString = "tacos";
 var objString = new String('tacos');
 
-if (firstString === objString) {
+if (firstString == objString) {
   // console.log('loosely equal');
+  // are loosely equal because the VALUE is the same - 'tacos'
 }
 
-if (firstString == objString) {
+if (firstString === objString) {
   // console.log('strictly equal');
+} else {
+  // console.log('they aint');
+  // are not strictly equal because are not EXACTLY the same - different type
 }
 
 let myNumber = 77;
@@ -50,25 +55,25 @@ let myNumber = 77;
 //   alert('first is bigger');
 // } else if (secPrompt > firstPrompt) {
 //   alert('second is bigger');
-// } else if (firstPrompt == secPrompt) {
+// } else if (firstPrompt === secPrompt) {
 //   alert('they the same');
 // } else {
 //   alert('wtf did u put in');
 // }
 
-// let firstName = prompt('gimme ur first name', 'tom');
+// let firstName = prompt('gimme ur first name', 'jack');
 
-switch(firstName) {
-  case 'tom':
-    alert('yo wassup tom');
-    break;
-  case 'john':
-    alert('eww');
-    break;
-  case 'jordan':
-    alert('more like boredom');
-    break;
-  default:
-    alert('lol u dont have a name');
-    break;
-}
+// switch(firstName) {
+//   case 'tom':
+//     alert('yo wassup tom');
+//     break;
+//   case 'john':
+//     alert('eww');
+//     break;
+//   case 'jordan':
+//     alert('more like boredom');
+//     break;
+//   default:
+//     alert('lol u dont have a name');
+//     break;
+// }
