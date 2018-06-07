@@ -67,7 +67,7 @@ while(j < todos.length) {
   j++;
 }
 
-longest.push("these are not the droids you're looking for");
+longest.push("this");
 
 // step 4
 let z = 0;
@@ -77,3 +77,12 @@ do {
   }
   z++;
 } while(z < todos.length);
+
+let doneItems = [];
+
+todos.forEach(todo => {
+  if(todo[todo.length - 1] !== 'done')
+  doneItems.push(todo);
+});
+
+alert(doneItems);
